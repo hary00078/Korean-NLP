@@ -1,0 +1,8 @@
+--train--
+python run.py --bert_model klue_bert_base/ --output_dir output_dstc7/ --train_dir korean_data/ --use_pretrain --architecture poly --poly_m 16 --learning_rate 5e-5
+
+--eval--
+python run.py --bert_model klue_bert_base/ --output_dir output_dstc7/ --train_dir korean_data/ --architecture poly --poly_m 16 --eval
+
+--inference
+python run.py --bert_model klue_bert_base/ --output_dir output_dstc7/ --train_dir korean_data/ --architecture poly --poly_m 16 --eval --inference
