@@ -151,7 +151,7 @@ if __name__ == '__main__':
     
     parser.add_argument("--eval", action="store_true")
     parser.add_argument("--model_type", default='bert', type=str)
-    parser.add_argument("--output_dir", default='result', type=str) # required=True
+    parser.add_argument("--output_dir", default='best_model', type=str) # required=True
     parser.add_argument("--train_dir", default='dstc7/', type=str)
 
     parser.add_argument("--use_pretrain", action="store_true")
